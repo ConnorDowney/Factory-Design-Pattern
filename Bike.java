@@ -1,3 +1,7 @@
+/**
+ * A Bike
+ * @author Connor Downey
+ */
 public abstract class Bike {
     
     protected String name;
@@ -6,6 +10,9 @@ public abstract class Bike {
     protected boolean hasPedals;
     protected boolean hasTrainingWheels;
 
+    /**
+     * Abstract method for creating the bike
+     */
     public void createBike()
     {
         createFrame();
@@ -14,11 +21,17 @@ public abstract class Bike {
         getPrice();
     }
 
+    /**
+     * Message for creating the frame
+     */
     private void createFrame()
     {
         System.out.println("Assembling "+name+" frame");
     }
 
+    /**
+     * Message for adding wheels
+     */
     private void addWheels()
     {
         if(numWheels!=0)
@@ -34,6 +47,9 @@ public abstract class Bike {
         }
     }
 
+    /**
+     * Message for adding pedals
+     */
     private void addPedals()
     {
         if(hasPedals)
@@ -42,6 +58,9 @@ public abstract class Bike {
         }
     }
 
+    /**
+     * Message for price
+     */
     public void getPrice()
     {
         System.out.println("Price: $"+price);

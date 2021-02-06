@@ -1,6 +1,14 @@
-
+/**
+ * A Bike Store
+ * @author Connor Downey
+ */
 public class BikeStore {
     
+    /**
+     * Creates a Bike
+     * @param type Type of bike
+     * @return The completed bike
+     */
     public Bike orderBike(String type)
     {
         Bike bike = createBike(type);
@@ -8,6 +16,11 @@ public class BikeStore {
         return bike;
     }
 
+    /**
+     * Creates the bike by calling the correct class
+     * @param type Used to call the correct class
+     * @return The completed bike
+     */
     private Bike createBike(String type)
     {
         if(type.equalsIgnoreCase("tricycle"))

@@ -1,5 +1,12 @@
+/**
+ * A Strider
+ * @author Connor Downey
+ */
 public class Strider extends Bike{
     
+    /**
+     * Creates a Strider
+     */
     public Strider()
     {
         numWheels = 2;

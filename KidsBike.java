@@ -1,5 +1,12 @@
+/**
+ * A Kids Bike
+ * @author Connor Downey
+ */
 public class KidsBike extends Bike{
     
+    /**
+     * Creates a Kids Bike
+     */
     public KidsBike()
     {
         numWheels = 2;
